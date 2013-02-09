@@ -1,11 +1,11 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castle.MonoRail.ViewComponents-vs2008", "Castle.MonoRail.ViewComponents\Castle.MonoRail.ViewComponents-vs2008.csproj", "{717C688D-81BC-4C81-9487-1D5151ADF573}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castle.MonoRail.ViewComponents", "Castle.MonoRail.ViewComponents\Castle.MonoRail.ViewComponents.csproj", "{717C688D-81BC-4C81-9487-1D5151ADF573}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castle.MonoRail.ViewComponents.TestSite-vs2008", "Castle.MonoRail.ViewComponents.TestSite\Castle.MonoRail.ViewComponents.TestSite-vs2008.csproj", "{6C229F56-62A2-47EE-973C-1F892960CA87}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castle.MonoRail.ViewComponents.TestSite", "Castle.MonoRail.ViewComponents.TestSite\Castle.MonoRail.ViewComponents.TestSite.csproj", "{6C229F56-62A2-47EE-973C-1F892960CA87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castle.MonoRail.PortableAreaExample-vs2008", "Castle.MonoRail.PortableAreaExample-vs2008\Castle.MonoRail.PortableAreaExample-vs2008.csproj", "{32137E1C-0252-4009-82E6-1A482612E44A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castle.MonoRail.PortableAreaExample", "Castle.MonoRail.PortableAreaExample\Castle.MonoRail.PortableAreaExample.csproj", "{32137E1C-0252-4009-82E6-1A482612E44A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

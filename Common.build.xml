@@ -21,28 +21,24 @@
 				 Targets="Clean" />
 	</Target>
 	<Target Name="GenerateAssemblyInfo">
-		<SvnVersion LocalPath=".">
-			<Output TaskParameter="Revision"
-					PropertyName="Revision" />
-		</SvnVersion>
-		<AssemblyInfo AssemblyCompany ="Castle Project"
+		<AssemblyInfo
+			AssemblyCompany="Castle Project"
 			AssemblyCopyright="Castle Project, original author or authors"
 			AssemblyDescription="$(ProjectName)"
-			AssemblyInformationalVersion="$(Version).$(Revision)"
-			 AssemblyTitle ="$(ProjectName)$(ExtraInfo)"
-			 CodeLanguage="CS"
-			 CLSCompliant ="$(ClsCompliant)"
-			 AssemblyVersion ="$(Version).$(Revision)"
-			 OutputFile="%(AssemblyInfo.File)"
-			 />
+			AssemblyInformationalVersion="$(Version).0"
+			AssemblyTitle="$(ProjectName)$(ExtraInfo)"
+			CodeLanguage="CS"
+			CLSCompliant="$(ClsCompliant)"
+			AssemblyVersion="$(Version).0"
+			OutputFile="%(AssemblyInfo.File)"
+		/>
 	</Target>
-	
+
 	<Target Name="Compile" DependsOnTargets="GenerateAssemblyInfo">
-		
 		<MSBuild Projects="$(SolutionFile)"
 				 Properties="Configuration=$(Configuration)" />
 	</Target>
 
 	<Import Project="$(SharedLibsDir)\Tools\MSBuild.Community.Tasks.Targets"/>
-	<UsingTask TaskName="MbUnit.MSBuild.Tasks.MbUnit"  AssemblyFile="$(SharedLibsDir)\Tools\MbUnit\MbUnit.MSBuild.Tasks.dll" />
+	<UsingTask TaskName="MbUnit.MSBuild.Tasks.MbUnit" AssemblyFile="$(SharedLibsDir)\Tools\MbUnit\MbUnit.MSBuild.Tasks.dll" />
 </Project>
